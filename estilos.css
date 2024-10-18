@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: block;
+    text-align: center;
+    margin: 10px !important;
+    padding: 10px !important;   
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+ul li{
+    display: inline-block;
+}
+.fondo{
+    background-color: blueviolet
+    ;
+    width: 600px;
+    height: 400px;
+}
+
+h3:hover{
+    color:red;
+}
+
+/* no cambia este porque la class tiene + peso que la etiqueta común */
+
+section{
+    background-color: blue;
+}
