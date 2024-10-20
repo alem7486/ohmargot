@@ -19,12 +19,12 @@ nav{
     padding: 10px;
 }
 
-.nav-menu{
+.nav-menu a{
     display: flex;
-    color:white;
     justify-content: center;
     text-justify: distribute;
     color: white;
+ 
     gap: 20px;
 }
 
@@ -32,11 +32,6 @@ nav{
     color:coral;
 }
     
-
-
-.nav-menu a:hover{
-    red
-}
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -55,8 +50,3 @@ ul li{
     height: 400px;
 }
 
-/* no cambia este porque la class tiene + peso que la etiqueta común */
-
-section{
-    background-color: blue;
-}
