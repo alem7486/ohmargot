@@ -3,35 +3,68 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 header{
     display: block;
-    text-align: center;
-    margin: 10px !important;
-    padding: 10px !important;   
+    text-align: center;   
 }
 
 /*Navbar*/
 
 nav{
     background-color: cornflowerblue;
-    padding: 10px;
+    color:transparent;
+    padding: 10px !important;
+    border: 2px;
+    border-radius: 10px;
 }
 
-.nav-menu a{
+.nav-menu{
     display: flex;
     justify-content: center;
-    text-justify: distribute;
-    color: white;
- 
     gap: 20px;
 }
 
+.nav-menu a{
+   color: white;
+}
 .nav-menu a:hover{
     color:coral;
 }
-    
+
+/* cards */
+
+div{
+     width: 150px;
+     height: 150px;
+     background-color: coral;
+     margin-bottom: 20px;
+     padding: 10px;
+     margin: 10px;
+     display: inline-block;
+     overflow: auto;
+}
+
+.caja1{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+
+}
+
+.caja2{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.caja3{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -50,3 +83,10 @@ ul li{
     height: 400px;
 }
 
+/* Contacto */
+
+input{
+    padding: 5px;
+    margin: 5px;
+
+}
