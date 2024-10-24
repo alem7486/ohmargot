@@ -14,7 +14,7 @@ header{
 /*Navbar*/
 
 nav{
-    background-color: cornflowerblue;
+    background-color: #4EA526;
     color:transparent;
     padding: 10px !important;
     border: 2px;
@@ -34,23 +34,15 @@ nav{
     color:coral;
 }
 
-.tituloppal{
-    font-size:50px;
-    margin: 200px;
+.inicio{
+    font-size:80px;
+    font-weight: 300;
+    margin: 40px;
+    padding: 40px;
+    display: inline-block;
 }
 
 /* cards */
-
-div{
-     width: 150px;
-     height: 150px;
-     background-color: coral;
-     margin-bottom: 20px;
-     padding: 10px;
-     margin: 10px;
-     display: inline-block;
-     overflow: auto;
-}
 
 .caja1{
   align-content: center;
@@ -87,8 +79,8 @@ div{
 body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
     font-style: normal;
+    background-color: #fdfdde;
 }
 
 ul li{
