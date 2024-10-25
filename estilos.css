@@ -34,13 +34,27 @@ nav{
     color:coral;
 }
 
-.inicio{
-    font-size:80px;
-    font-weight: 300;
-    margin: 40px;
-    padding: 40px;
-    display: inline-block;
+.container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
+.box1 {
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 70px;
+    justify-content:center;
+    align-content: center;
+}
+.box2 {
+    width: 870px;
+    height: 470px;
+    padding: 10px;
+    margin: 10px;
+}
+
 
 /* cards */
 
