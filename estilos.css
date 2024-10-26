@@ -39,6 +39,9 @@ nav{
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
 }
+/* primera parte*/
+
+
 .box1 {
     width: 500px;
     height: 500px;
@@ -48,47 +51,29 @@ nav{
     justify-content:center;
     align-content: center;
 }
+
 .box2 {
-    width: 870px;
-    height: 470px;
+    width: 970px;
+    height: 570px;
     padding: 10px;
     margin: 10px;
 }
 
+/*segunda parte*/
 
-/* cards */
-
-.caja1{
-  align-content: center;
-  align-items: center;
-  background-color:cornflowerblue;
-  border-radius: 70px;
-  bottom: 40px;
-  cursor: pointer;
-  gap: 10px;
-  justify-content: center;
-  overflow: hidden;
-  padding: 20px 20px;
-  pointer-events: auto;
-  position: absolute;
-  right: 40px;
-  width: min-content;
-  position:fixed;
-  overflow: auto;
-
-}
-
-.caja2{
-    border-style: solid;
-    border-width: 2px;
+.container2 {
+    border: 2px solid black;
     border-radius: 10px;
 }
 
-.caja3{
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 10px;
+.box3{
+    justify-content: center;
+    font-size: 22px;
+    display: flex;
+    width: 45%;
+    text-align: center;
 }
+
 
 body{
     font-family: "Montserrat", sans-serif;
@@ -113,4 +98,9 @@ input{
     padding: 5px;
     margin: 5px;
 
+}
+
+.footer{
+    justify-content: center;
+    display: flex;
 }
