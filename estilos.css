@@ -37,7 +37,10 @@ nav{
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
+    border-radius: 5px;
+    border: #4EA526;
 }
+
 /* primera parte*/
 
 
@@ -45,18 +48,28 @@ nav{
     width: 500px;
     height: 500px;
     padding: 10px;
-    margin: 10px;
+    margin: 30px;
     font-size: 70px;
-    justify-content:center;
     align-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .box2 {
-    width: 970px;
-    height: 570px;
-    padding: 10px;
-    margin: 10px;
+    border: 5px; /* Borde alrededor del div */
+    padding: 5px; /* Espacio entre la imagen y el borde del div */
+    display: inline-block; /* Asegura que el div se ajuste al tamaño de la imagen */
+    border-radius: 15px; /* Redondea los bordes del div */
+    text-align: center;
+    width: 50%;
 }
+
+.box2 img{
+    max-width: 70%;
+    height: 50%;
+    border-radius: 15px;
+}
+
 
 /*segunda parte*/
 
@@ -114,8 +127,13 @@ footer{
 
 /* Contacto */
 
+.titulo{
+    margin: 15px;
+}
+
 input{
     padding: 5px;
     margin: 5px;
+    border-radius: 5px;
 
 }
