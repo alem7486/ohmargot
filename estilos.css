@@ -18,7 +18,6 @@ nav{
     color:transparent;
     padding: 10px !important;
     border: 2px;
-    border-radius: 10px;
 }
 
 .nav-menu{
@@ -62,16 +61,27 @@ nav{
 /*segunda parte*/
 
 .container2 {
-    border: 2px solid black;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .box3{
-    justify-content: center;
-    font-size: 22px;
-    display: flex;
-    width: 45%;
-    text-align: center;
+    margin: 10px;
+    padding: 20px;
+    width: 700px;
+    max-width: 100%;
+    border-radius: 8px;
+    border: 2px solid #4EA526 ;
+    font-size: 20px;
+}
+
+.box4{
+    margin:20px;
+    width: 700px;
+    max-width: 100%;
+    font-size: 20px;
 }
 
 
@@ -84,12 +94,22 @@ body{
 
 ul li{
     display: inline-block;
+    padding-inline: 5px;
+    
 }
+
 .fondo{
     background-color: blueviolet
     ;
     width: 600px;
     height: 400px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Contacto */
@@ -98,9 +118,4 @@ input{
     padding: 5px;
     margin: 5px;
 
-}
-
-.footer{
-    justify-content: center;
-    display: flex;
 }
