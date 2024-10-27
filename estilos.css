@@ -123,6 +123,7 @@ footer{
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin:20px;
 }
 
 /* Contacto */
@@ -135,5 +136,32 @@ input{
     padding: 5px;
     margin: 5px;
     border-radius: 5px;
+}
+
+/* Tienda */
+
+.card1{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.card1 img {
+    width: 100%;
+    height: auto;
+}
+
+.card1 button{
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: 300;
+    padding:10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:500;
 
 }
