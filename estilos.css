@@ -67,6 +67,7 @@ nav{
 .box2 img{
     max-width: 70%;
     height: 50%;
+    object-fit: cover;
     border-radius: 15px;
 }
 
@@ -81,8 +82,10 @@ nav{
 }
 
 .box3{
-    margin: 10px;
-    padding: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top:5px;
+    padding-bottom: 10px;
     width: 700px;
     max-width: 100%;
     border-radius: 8px;
@@ -133,8 +136,13 @@ main{
     padding: 10px;
 }
 
+h2{
+    margin-top:10px;
+    padding-top:10px;
+    padding-left:10px;
+}
 form{
-    padding:10px;
+    
     margin: 10px;
     align-items: center;
     justify-content: center;
@@ -153,19 +161,20 @@ input{
 /* Tienda */
 
 .card1{
-    border: 1px solid #ddd;
+    border: 1px solid #4EA526;
+    background-color:#95cb7c;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 300px;
     text-align: center;
     margin: auto;
-    padding-top: 10px;
 }
 
 .card1 img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .card1 button{
@@ -176,4 +185,7 @@ input{
     font-family: 'Montserrat', sans-serif;
     font-weight:500;
 
+    
+
 }
+

@@ -9,14 +9,15 @@
 </head>
 
 <header>
-    <h1 class="titulo">Sigamos en contacto</h1>
-</header>
+    <img src="Margot.png" alt="logo_tienda">
+    </header>
 
 <body>
     <nav>
         <ul class="nav-menu">
+            <li><a href="index.html"><h3>Inicio</h3></a></li>
             <li><a href="tienda.html"><h3>Productos</h3></a></li>
-            <li><a href="ofertas.html"><h3>Ofertas destacadas</h3></a></li>
+            <li><a href="combos.html"><h3>Combos</h3></a></li>
             <li><a href="contacto.html"><h3>Contacto</h3></a></li>
         </ul>
     </nav>
@@ -24,14 +25,12 @@
     <main>
 
        <h2>Dejanos tus datos y te contactamos</h2> <br> <br>
-        
-        <!--ERROR cuando envío el form, no me llega a la web interna, solo si la actualizo-->
 
         <form action="agradecimiento.html" method="post">
-            <input type="text" placeholder="Nombre"> <br>
-            <input type="text" placeholder="Apellido"> <br>
-            <input type="text" placeholder="Mensaje"> <br>
-            <input type="email" placeholder="Correo"> <br>
+            <input type="text" placeholder="Nombre" required> <br>
+            <input type="text" placeholder="Apellido" required> <br>
+            <input type="text" placeholder="Mensaje" required> <br>
+            <input type="email" placeholder="Correo" required> <br>
             <input type="text" placeholder="dd/mm/aaaa"> <br> <br>
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
