@@ -56,12 +56,11 @@ nav{
 }
 
 .box2 {
-    border: 5px; /* Borde alrededor del div */
-    padding: 5px; /* Espacio entre la imagen y el borde del div */
-    display: inline-block; /* Asegura que el div se ajuste al tamaño de la imagen */
-    border-radius: 15px; /* Redondea los bordes del div */
+    border: 5px;
+    padding: 5px;
+    border-radius: 15px;
     text-align: center;
-    width: 50%;
+    max-width: 50%;
 }
 
 .box2 img{
@@ -193,7 +192,21 @@ input{
     font-family: 'Montserrat', sans-serif;
     font-weight:500;
 
-    
+}
 
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    div{flex-direction: column;
+    }
+    }
+}
+
+@media (max-width: 482px) {
+    .navbar {
+        flex-direction: column;
+    div{flex-direction: column;
+    }
+    }
 }
 
