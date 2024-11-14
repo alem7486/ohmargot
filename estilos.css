@@ -1,5 +1,8 @@
+/*Fuentes-------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+/*Generales---------------------------------------------------*/
 *{
     margin: 0px;
     padding: 0px;
@@ -11,7 +14,7 @@ header{
     text-align: center;   
 }
 
-/*Navbar*/
+/*----------------------------Navbar--------------------------------------*/
 
 nav{
     background-color: #4EA526;
@@ -41,7 +44,7 @@ nav{
     border: #4EA526;
 }
 
-/* primera parte*/
+/*------------------------- Contenedor superior-------------------------------------*/
 
 
 .box1 {
@@ -71,7 +74,7 @@ nav{
 }
 
 
-/*segunda parte*/
+/*-----------------------------Contenedor Inferior---------------------------------------*/
 
 .container2 {
     display: flex;
@@ -119,16 +122,58 @@ ul li{
     width: 600px;
     height: 400px;
 }
+/*---------------------------------- Footer-----------------------------------*/
 
-footer{
+/* Estilo general para el footer */
+footer.footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    margin-top:100px;
+    margin-top: 50px;
+    padding: 20px;
+    
 }
 
-/* Contacto */
+footer h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los íconos */
+    flex-wrap: wrap; /* Permite que se ajusten en filas en pantallas pequeñas */
+}
+
+footer ul li {
+    display: inline-block;
+}
+
+footer ul li a i {
+    font-size: 1.5rem; /* Ajusta el tamaño de los íconos */
+}
+
+footer ul li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+footer p {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/*-------------------------FIN INDEX-----------------------------------*/
+
+/*---------------------------- Contacto ---------------------------------*/
 
 main{
     margin: 10px;
@@ -165,7 +210,10 @@ input{
     justify-content: space-between;
 }
 
-/* Tienda */
+/*-----------------------FIN CONTACTO------------------------------------*/
+
+
+/*------------------------- Tienda--------------------------------------- */
 
 .card1{
     border: 1px solid #4EA526;
@@ -194,19 +242,142 @@ input{
 
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-    div{flex-direction: column;
+/*---------------------FIN TIENDA----------------------------------*/
+
+
+/*-----------------------MEDIA QUERY------------------------------*/
+
+/*Para pantallas pequeñas (smartphones) de menos de 600px*/
+
+@media (max-width: 600px) {
+    /* Reducir el tamaño de las fuentes */
+    h2 {
+        font-size: 18px;
     }
+
+    .nav-menu {
+        flex-direction: column; /* Menú vertical */
+        gap: 10px;
+    }
+
+    .box1 {
+        font-size: 30px; /* Reducir el tamaño de la fuente */
+        width: 100%;
+        height: auto; /* Ajuste automático */
+        margin: 10px;
+    }
+
+    .box2 img {
+        max-width: 100%; /* Imagen ocupa toda la anchura disponible */
+        height: auto;
+    }
+
+    .box3, .box4 {
+        width: 90%;
+        font-size: 16px; /* Texto más pequeño */
+    }
+
+   
+    iframe {
+        width: 100%; /* Ajustar mapa a pantalla pequeña */
+        height: 300px;
     }
 }
 
-@media (max-width: 482px) {
-    .navbar {
-        flex-direction: column;
-    div{flex-direction: column;
+/*----------------------------------------------------------------------*/
+/*Para pantallas medianas (tablets) de entre 600px y 1024px*/
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .nav-menu {
+        gap: 15px;
     }
+
+    .box1 {
+        font-size: 50px;
+        width: 70%;
+    }
+
+    .box2 img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .box3, .box4 {
+        width: 80%;
+        font-size: 18px;
+    }
+
+    iframe {
+        width: 90%;
+        height: 400px;
     }
 }
 
+/*------------------------------------------------------------------*/
+
+/*Para pantallas grandes (desktops) de más de 1024px*/
+
+@media (min-width: 1024px) {
+    .box1 {
+        font-size: 60px;
+        width: 60%;
+    }
+
+    .box2 img {
+        max-width: 70%;
+        height: 50%;
+    }
+
+    .box3, .box4 {
+        width: 70%;
+        font-size: 20px;
+    }
+
+    iframe {
+        width: 80%;
+        height: 450px;
+    }
+}
+
+
+/*-------------------------*/
+/*footer*/
+
+@media (max-width: 600px) {
+    footer ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Permitir que los íconos se distribuyan en varias líneas si es necesario */
+    }
+
+    footer ul li {
+        display: inline-block; /* Asegura que los íconos se mantengan en línea */
+        margin: 3px; /* Ajusta el espacio entre íconos */
+    }
+
+    footer ul li a {
+        font-size: 1rem; /* Ajusta el tamaño de los íconos si es necesario */
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+    footer ul li a i {
+        font-size: 1rem; /* Reducir tamaño para pantallas pequeñas */
+    }
+}
+
+/* Pantallas medianas */
+@media (min-width: 600px) and (max-width: 1024px) {
+    footer ul li a i {
+        font-size: 1rem; /* Tamaño intermedio para pantallas medianas */
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    footer ul li a i {
+        font-size: 2rem; /* Tamaño más grande para pantallas grandes */
+    }
+}
