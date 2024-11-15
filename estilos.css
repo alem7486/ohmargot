@@ -38,8 +38,8 @@ nav{
 
 .container {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
     border-radius: 5px;
     border: #4EA526;
 }
@@ -146,8 +146,8 @@ footer ul {
     padding: 0;
     display: flex;
     justify-content: center;
-    gap: 20px; /* Espacio entre los íconos */
-    flex-wrap: wrap; /* Permite que se ajusten en filas en pantallas pequeñas */
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
 footer ul li {
@@ -155,7 +155,7 @@ footer ul li {
 }
 
 footer ul li a i {
-    font-size: 1.5rem; /* Ajusta el tamaño de los íconos */
+    font-size: 1.5rem; 
 }
 
 footer ul li {
@@ -290,6 +290,7 @@ input{
 @media (min-width: 600px) and (max-width: 1024px) {
     .nav-menu {
         gap: 15px;
+        display: grid;
     }
 
     .box1 {
@@ -348,36 +349,35 @@ input{
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap; /* Permitir que los íconos se distribuyan en varias líneas si es necesario */
+        flex-wrap: wrap; 
     }
 
     footer ul li {
-        display: inline-block; /* Asegura que los íconos se mantengan en línea */
-        margin: 3px; /* Ajusta el espacio entre íconos */
-    }
+        display: inline-block; 
+        margin: 3px; 
 
     footer ul li a {
-        font-size: 1rem; /* Ajusta el tamaño de los íconos si es necesario */
+        font-size: 1rem; 
     }
 }
 
 /* Pantallas pequeñas */
 @media (max-width: 600px) {
     footer ul li a i {
-        font-size: 1rem; /* Reducir tamaño para pantallas pequeñas */
+        font-size: 1rem; 
     }
 }
 
 /* Pantallas medianas */
 @media (min-width: 600px) and (max-width: 1024px) {
     footer ul li a i {
-        font-size: 1rem; /* Tamaño intermedio para pantallas medianas */
+        font-size: 1rem; 
     }
 }
 
 /* Pantallas grandes */
 @media (min-width: 1024px) {
     footer ul li a i {
-        font-size: 2rem; /* Tamaño más grande para pantallas grandes */
+        font-size: 2rem; 
     }
 }
