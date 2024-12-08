@@ -10,8 +10,8 @@
 
 <header>
     <a href="index.html"><img src="Margot.png" alt="logo_tienda"></a>
-    </header>
-    
+</header>
+
 <body>
     <nav>
         <ul class="nav-menu">
@@ -22,66 +22,66 @@
         </ul>
     </nav>
     <main>
-    <h2>Productos</h2>
-    <br>
+        <h2>Productos</h2>
+        <br>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium consectetur fugiat, quam suscipit distinctio, a ab explicabo, impedit ipsa accusantium sit? Aliquid facere, aspernatur perferendis id rem doloremque dolor?
-    Nihil quia harum ipsam cum. Eius, reprehenderit. Quia modi sint ab cum iusto, voluptatibus sunt necessitatibus, repellat beatae nihil eos pariatur obcaecati quidem eligendi.</p> <br> <br>
-</main>
-<div class="container">
-
-    <div class="card1">
-        <h2>Cous Cous Ararat</h2> <br>
-        <p>Cous Cous</p> <br>
-        <img src="https://acdn.mitiendanube.com/stores/001/040/363/products/cous-cous-11-5be506b68382480ed416251941286359-1024-1024.webp" alt="galletas" height="auto"> <br> <br>
-        <h4>$1.200</h4>
-        <button>Agregar al pedido</button>
-    </div>
-
-    <div class="card1">
-        <h2>PDK</h2> <br>
-        <p>Pan de queso</p> <br>
-        <img src="https://acdn.mitiendanube.com/stores/001/040/363/products/anillitos-frutas-150g-frutas-751-2f56687fc395312e3216801005660724-1024-1024.webp" alt="galletas"> <br> <br>
-        <h4>$1.00</h4>
-        <button>Agregar al pedido</button>
-    </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At praesentium consectetur fugiat, quam suscipit distinctio, a ab explicabo, impedit ipsa accusantium sit? Aliquid facere, aspernatur perferendis id rem doloremque dolor?
+        Nihil quia harum ipsam cum. Eius, reprehenderit. Quia modi sint ab cum iusto, voluptatibus sunt necessitatibus, repellat beatae nihil eos pariatur obcaecati quidem eligendi.</p> <br> <br>
+    </main>
+    <div class="container">
 
         <div class="card1">
-            <h2>Choco Smams</h2> <br>
-            <p>Galletas de chocolate sin gluten</p> <br>
+            <h2>Cous Cous</h2> <br>
+            <p>Ararat</p> <br>
+            <img src="https://acdn.mitiendanube.com/stores/001/040/363/products/cous-cous-11-5be506b68382480ed416251941286359-1024-1024.webp" alt="galletas" height="auto"> <br> <br>
+            <h4>$1.200</h4>
+            <button onclick="agregarAlCarrito('Cous Cous Ararat', 1200)">Agregar al pedido</button>
+        </div>
+
+        <div class="card1">
+            <h2>Pan de queso</h2> <br>
+            <p>PDK</p> <br>
+            <img src="https://acdn.mitiendanube.com/stores/001/040/363/products/anillitos-frutas-150g-frutas-751-2f56687fc395312e3216801005660724-1024-1024.webp" alt="galletas"> <br> <br>
+            <h4>$1720.00</h4>
+            <button onclick="agregarAlCarrito('PDK', 1720)">Agregar al pedido</button>
+        </div>
+
+        <div class="card1">
+            <h2>Galletas de chocolate</h2> <br>
+            <p>Smams</p> <br>
             <img src="https://acdn.mitiendanube.com/stores/001/040/363/products/chocosmams1-812f113a0d79b54bb116497762521154-1024-1024.webp" alt="galletas"> <br> <br>
-            <h4>$1.00</h4>
-            <button>Agregar al pedido</button>
+            <h4>$1450.00</h4>
+            <button onclick="agregarAlCarrito('Choco Smams', 1450)">Agregar al pedido</button>
         </div>
 
         <div class="card1">
-            <h2>Natier</h2> <br>
-            <p>Colágeno hidrolizado</p> <br>
+            <h2>Colágeno hidrolizado</h2> <br>
+            <p>Natier</p> <br>
             <img src="https://acdn.mitiendanube.com/stores/001/040/363/products/colageno1-144b5358fc20f3b6eb16127632512947-1024-1024.webp" alt="galletas"> <br> <br>
-            <h4>$1.00</h4>
-            <button>Agregar al pedido</button>
+            <h4>$4200.00</h4>
+            <button onclick="agregarAlCarrito('Natier', 4200)">Agregar al pedido</button>
         </div>
 
     </div>
 
-
-</div>
-
+    <div id="carrito">
+        <h2 class="carrito">Tu pedido</h2>
+        <ul id="lista-carrito"></ul>
+    </div>
 </body>
 <br>
 
 <footer class="footer">
     <h2>Seguinos en nuestras redes</h2> 
-        <ul>
-         <li><a clas="logoyt" href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook fa-2xl"></i></a></li>
-         <li><a class="logoig" href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram fa-2xl"></i> </a></li>
-         <li><a clas="logoyt" href="https://www.youtube.com" target="_blank"> <i class="fa-brands fa-youtube fa-2xl"></i></a></li>
-         <li><a clas="logoyt" href="http://web.whatsapp.com" target="_blank"> <i class="fa-brands fa-whatsapp fa-2xl"></i></a></li>
-         <li><a class="logomail" href="mailto:alem7486@gmail.com" target="_blank"> <i class="fa-regular fa-envelope fa-2xl"></a></i></li> <br> <br>
-         
-        </ul>
-        <p>Todos los derechos reservados. Buenos Aires 2024</p>
-    </footer>
-    
+    <ul>
+        <li><a class="logoyt" href="https://www.facebook.com" target="_blank"> <i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+        <li><a class="logoig" href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram fa-2xl"></i> </a></li>
+        <li><a class="logoyt" href="https://www.youtube.com" target="_blank"> <i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+        <li><a class="logoyt" href="http://web.whatsapp.com" target="_blank"> <i class="fa-brands fa-whatsapp fa-2xl"></i></a></li>
+        <li><a class="logomail" href="mailto:alem7486@gmail.com" target="_blank"> <i class="fa-regular fa-envelope fa-2xl"></i></a></li> <br> <br>
+    </ul>
+    <p>Todos los derechos reservados. Buenos Aires 2024</p>
+</footer>
 
+<script src="carrito.js"></script>
 </html>
