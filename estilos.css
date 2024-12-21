@@ -71,6 +71,7 @@ nav{
     height: 50%;
     object-fit: cover;
     border-radius: 15px;
+    display: flex;
 }
 
 
@@ -123,9 +124,8 @@ ul li{
     width: 600px;
     height: 400px;
 }
-/*---------------------------------- Footer-----------------------------------*/
+/*Footer*/
 
-/* Estilo general para el footer */
 footer.footer {
     display: flex;
     flex-direction: column;
@@ -171,10 +171,7 @@ footer p {
 }
 
 
-
-/*-------------------------FIN INDEX-----------------------------------*/
-
-/*---------------------------- Contacto ---------------------------------*/
+/*Contacto*/
 
 main{
     margin: 10px;
@@ -217,10 +214,9 @@ div.formbuttons{
 
 
 
-/*-----------------------FIN CONTACTO------------------------------------*/
 
+/*Tienda */
 
-/*------------------------- Tienda--------------------------------------- */
 h1{
     text-align: center;
     padding: 10px;
@@ -321,12 +317,55 @@ p{
     
 }
 
-/*---------------------FIN TIENDA----------------------------------*/
+/*Media queries*/
 
+@media (max-width: 600px)
+     {nav ul {display: flex; 
+        flex-direction: column;
+        align-items: center;} 
 
+        .box1{
+            width: 70%;
+            font-size: 50px;
+        }
 
+        .box2 {
+            width: 100%;
+        }
+        .box2 img {
+            display:none;
 
-@media (max-width: 600px) { nav ul { display: flex; flex-direction: column; align-items: center; } .container { flex-direction: column; align-items: center; } .card1 { width: 100%; max-width: 350px; } #carrito { width: 90%; max-width: none; } }
+        .box3{
+            display: flex;
+            width: 100%;
+            }
+
+        
+    .container {flex-direction: column;
+        align-items: center;} 
+        
+    .card1 {width: 100%;
+        max-width: 350px;} 
+        
+    #carrito { 
+        width: 90%; 
+        max-width: none;}
+    }
+}
 
 
 @media (min-width: 601px) and (max-width: 1024px) { .card1 { flex: 1 1 45%; } nav ul {display: flex; justify-content: space-around; } }
+
+/*API*/
+
+.apiclima{
+    text-align:center;
+    display: grid;
+}
+
+#botonclima{
+    font-size: 12pt;
+    font-family: montserrat;
+    font-weight: 600;
+    border-radius: 3px;
+}

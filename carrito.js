@@ -44,5 +44,3 @@ function actualizarLocalStorage() {
 // Mostrar el carrito al cargar la página por si hay datos en el local storage
 mostrarCarrito();
 
-/* API clima */
-

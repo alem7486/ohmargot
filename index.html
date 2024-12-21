@@ -11,6 +11,7 @@
 </head> 
 
 <body>
+
 <header>
     <a href="index.html"><img src="Margot.png" alt="logo_tienda"></a>
 </header>
@@ -19,12 +20,27 @@
         <ul class="nav-menu">
             <li><a href="index.html"><h3>Inicio</h3></a></li>
             <li><a href="tienda.html"><h3>Productos</h3></a></li>
-            <li><a href="contacto.html"><h3>Contacto</h3></a></li>
+            <li><a href="contacto.html"><h3>Contacto</h3></a></li>          
         </ul>
     </nav>
-       
+    <br>
+    <section>
+        <div class="apiclima">
+            <div class="containerapi">
+                <div class="search-container">
+                    El clima en tu ciudad
+                    <input type="text" placeholder="Ingresá una ciudad" id="city" value=""> 
+                    <button id="botonclima">Buscar</button>
+                    <div id="resultado"></div>
+                </div>
+            </div>
+            <script src="clima.js"></script>
+
+    </section>
+
+
 <section>
-    
+
     <div class="container">
         
         <div class="box1">Descubrí todo lo que tenemos para vos</div>
